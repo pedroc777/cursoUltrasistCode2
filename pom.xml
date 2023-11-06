@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>net.ultrasist.capacitacion</groupId>
-    <artifactId>chambeaya</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>chambeaya</name>
-    <description>Proyecto Spring que contiene el backend de la plataforma Chambea Ya!</description>
+    <artifactId>ejemplito</artifactId>
+    <version>1.2.3-RELEASE</version>
+    <name>gustavolando</name>
+    <description>Proyecto Spring que contiene el backend de mi primer ejemplo</description>
 
     <properties>
         <java.version>11</java.version>
@@ -27,8 +27,8 @@
         </dependency>
 
         <dependency>
-        	<groupId>org.springframework.boot</groupId>
-        	<artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -66,10 +66,34 @@
             <artifactId>springfox-boot-starter</artifactId>
             <version>3.0.0</version>
         </dependency>
+        
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <!-- El artefacto spring-boot-maven-plugin es una herramienta 
+                 que se utiliza para simplificar la creación, empaquetado 
+                 y ejecución de aplicaciones Spring Boot  -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
